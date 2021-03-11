@@ -1,0 +1,121 @@
+body {
+	background-color: lightgray;
+	font-family: sans-serif;
+}
+
+nav {
+	list-style-type: none;
+	padding: 10px;
+	color: white;
+	font-family: Helvetica;
+	margin-bottom:-30px;
+	text-align: right;
+	margin-right: 5px;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline;
+}
+
+li {
+	list-style-type: none;
+}
+
+}
+
+@media (max-width: 1131px;) {
+	header li {font-size: 1vw;}
+}
+
+#portrait {
+	width: 150px;
+	margin: 0 auto;
+
+}
+
+h1, h2, ol {
+	font-family: Helvetica;
+	color: white; 
+}
+
+header span {
+	color: lightblue;
+}
+
+header {
+	text-align: center;
+}
+
+#background {
+	background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url( images/BG.jpg);
+	background-position: center;
+	padding-bottom: 20px;
+
+}
+
+header p {
+	color: white;
+	font-family: Helvetica;
+	padding: 5px;
+	border: 1px lightblue solid;
+	display:inline;
+
+
+}
+
+#headsocial {
+	padding-left: 0;
+	margin-left: 0;
+	margin-top: 20px;
+}
+
+#headsocial li {
+	display: inline;
+
+}
+
+.social {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+}
+
+div, section {
+	width: 75%;
+	margin: 0 auto;
+
+}
+
+article {
+	margin-bottom: 50px;
+}
+.icons {
+	width: 30px;
+	height: 30px;
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+mark {
+	border-radius: 5px;
+	padding: 2px;
+
+}
+
+aside {
+	float: right;
+	width: 30%;
+}
+
+.skills {
+	columns: 10px 2;
+
+}
