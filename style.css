@@ -46,7 +46,7 @@ body {
 	}
 }
 
-button {
+#nextpage {
 	background-color: transparent;
 	border: 0;
 }
@@ -94,9 +94,10 @@ div span {
 
 .container-fluid p {
 	font-size: 1em;
+	margin: 0;
 }
 
-h1, p {
+h1, p, ul{
 	color: white;
 	font-family: Helvetica;
 	text-align: center;
@@ -104,21 +105,19 @@ h1, p {
 }
 
 #headsocial {
-	padding-left: 0;
-	margin-left: 0;
-	margin-top: 20px;
+	padding: 0;
+	margin: 0;
 }
 
 #headsocial li {
 	display: inline;
-
+	margin: 0 auto;
 }
 
 .social {
-	width: 30px;
-	height: 30px;
-	padding: 5px;
-	display: inline;
+	width: 4em;
+	height: 4em;
+	padding: 10px;
 }
 
 a {
