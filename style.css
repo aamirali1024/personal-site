@@ -6,6 +6,7 @@ body {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
+	max-height: 100vh;
 }
 
 #arrow {
@@ -23,12 +24,31 @@ body {
 	100% { transform: translateY(0); }
 }
 
+@media screen and (max-width: 415px) {
+	.flex-row {
+		margin: 0 auto;
+		background-color: black;
+		padding-left: 40.9vw;
+		padding-right: 40.9vw;	
+	}
+
+	#arrow {
+		height: 50px !important;
+		width: auto;
+		opacity: 100% !important;
+	}
+
+	@keyframes bounce {
+		0%   { transform: translateY(0); }
+		50%  { transform: translateY(-10px); }
+		100% { transform: translateY(0); }
+		
+	}
+}
+
 button {
 	background-color: transparent;
 	border: 0;
-	float: right;
-	margin-top: 250px;
-	
 }
 
 nav li {
@@ -46,37 +66,40 @@ li {
 
 }
 
-h1, h2, ol {
-	font-family: Helvetica;
-	color: white; 
-}
-
 div span {
 	color: lightblue;
 }
 
-.jumbrotron {
+.d-flex {
 	background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
             url( images/BG.jpg);
 	height: 100vh;
 	background-size: cover;
-	display: block;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-.jumbrotron h1 {
-	padding-top: 25%;
-
+.container-fluid {
+	height: 100vh;
+	margin: 0 auto;
 
 }
 
-div p {
+.container-fluid h1 {
+	padding-top: 40vh;
+	font-size: 3em;
+
+}
+
+.container-fluid p {
+	font-size: 1em;
+}
+
+h1, p {
 	color: white;
 	font-family: Helvetica;
-	padding: 5px;
-
+	text-align: center;
 
 }
 
