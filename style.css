@@ -16,6 +16,7 @@ body {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-timing-function: linear;
+	color: lightblue;
 }
 
 @keyframes bounce {
@@ -66,7 +67,7 @@ li {
 
 }
 
-div span {
+#name {
 	color: lightblue;
 }
 
@@ -80,24 +81,24 @@ div span {
 	background-attachment: fixed;
 }
 
-.container-fluid {
+#intro {
 	height: 100vh;
 	margin: 0 auto;
 
 }
 
-.container-fluid h1 {
+#intro h1 {
 	padding-top: 40vh;
 	font-size: 3em;
 
 }
 
-.container-fluid p {
+#intro p {
 	font-size: 1em;
 	margin: 0;
 }
 
-h1, p, ul{
+#intro h1, #intro p, #intro ul{
 	color: white;
 	font-family: Helvetica;
 	text-align: center;
@@ -120,12 +121,37 @@ h1, p, ul{
 	padding: 10px;
 }
 
+.social:hover {
+animation-name: growth;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-direction: normal;
+animation-timing-function: linear;
+
+}
+
+@keyframes growth {
+	0%   { transform: scale(0); }
+	25%  { transform: scale(1.1, 1.1); }
+	50%  { transform: scale(1.2, 1.2); }
+	75%  { transform: scale(1.3, 1.3); }
+	100% { transform: scale(1.4, 1.4); }
+}
+
 a {
 	text-decoration: none;
 }
 
-article {
-	margin-bottom: 50px;
+#navigation {
+	margin: 0;
+	width: 100px;
+	text-align: center;
+
+}
+.nav-item {
+	padding: 10px;
+	border-bottom: 1 solid gray;
+	background-color: black;
 }
 .icons {
 	width: 30px;
