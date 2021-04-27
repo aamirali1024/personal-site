@@ -14,8 +14,8 @@
 	</head>
 <body>
 	<!--BG + Title + Arrow animation-->
-	<section class="d-flex justify-content-around align-items-end flex-column">
-		<div id="intro" class="container-fluid">
+	<section id="intro" class="d-flex justify-content-around align-items-end flex-column">
+		<div id="introcontainer" class="container-fluid">
 			<h1>
 				<span id="name">Aamir</span> Ali
 			</h1>
@@ -38,7 +38,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="flex-row">
+		<div id="row1" class="flex-row">
 			<div class="mt-auto p-2">
 				<button id="nextpage">
 					<span id="arrow">
@@ -48,38 +48,61 @@
 			</div>
 		</div>
 	</section>
-	<section id="aboutme" class="container-fluid">
-		<h1>
-			About Me
-		</h1>
-		<span>
-			<i class="fas fa-user-circle"></i>
-		</span>
-		<img src="images/curlybrace.svg">
-		<p>
-			Lorem ipsum dolor sit amet, <br> 
-			consectetur adipiscing elit, <br>
-			sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-			Quis ipsum suspendisse ultrices gravida. <br>
-			Risus commodo viverra maecenas accumsan lacus vel facilisis. <br> 
-		</p>
-		<ul id="navigation" class="navbar-nav">
-			<li class="nav-item">
-			  <a class="nav-link" href="#">About Me</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Education</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Projects</a>
-			</li>
-			<li class="nav-item">
-			  <a class="nav-link" href="#">Skills</a>
-			</li>
-			<li class="nav-item">
+	<section id="aboutme1" class="d-flex flex-row justify-content-around align-items-center">
+			<h1 class="p-2">
+				About<br>
+				<span>Me</span>
+			</h1>
+			<img id="curlybrace" src="images/curlybrace.png" class="p-2 mr-auto">
+			<p class="p-2 mr-auto">
+				Lorem ipsum dolor sit amet,  
+				consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt 
+				ut labore et dolore magna aliqua. 
+				Quis ipsum suspendisse ultrices gravida. 
+				Risus commodo viverra maecenas 
+				accumsan lacus vel facilisis.  
+				sed do eiusmod tempor incididunt 
+				ut labore et dolore magna aliqua. 
+				Quis ipsum suspendisse ultrices gravida. 
+				Risus commodo viverra maecenas 
+				accumsan lacus vel facilisis. 
+			</p>
+			<ul id="navigation" class="navbar-nav p-2 mr-auto mb-auto">
+				<li class="nav-item">
+				<a class="nav-link" href="#">Profile</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Education</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Projects</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">Skills</a>
+				</li>
+				<li class="nav-item">
 				<a class="nav-link" href="#">Contact</a>
-			</li>
-		  </ul>
+				</li>
+			</ul>
+	</section>
+	<section id="education1">
+		<h1>
+			Education
+		</h1>
+		<img id="curlybrace" src="images/curlybrace.png">
+		<h2>
+			Front End Web-Developer Certificate
+		</h2>
+		<p>
+			2021
+		</p>
+		<h2>
+			Rutgers University
+		</h2>
+		<p>
+			2019
+		</p>
 	</section>
 </body>
 </html>
