@@ -155,9 +155,9 @@ a {
 }
 
 #navigation {
-	margin: 0;
 	width: 100px;
 	text-align: center;
+
 }
 .nav-item {
 	padding: 5px;
@@ -168,3 +168,58 @@ a {
 #navigation a {
 	color: black;
 }
+
+#education1 {
+	background-color: black;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+	grid-template-rows: 50fr 50fr;
+	gap: 10px;
+	align-items: center;
+	
+}
+
+strong {
+	color: lightblue;
+}
+
+#edu {
+
+}
+
+#edu, #brace {
+	grid-row: 1/3;
+	align-self: center;
+}
+
+#w3c #{
+	
+}
+
+#cert {
+	
+}
+
+#rutgers {
+	grid-row-start: 2;
+	grid-column-start: 3;
+
+}
+
+#degree {
+	grid-row-start: 2;
+	grid-column-start: 4;
+
+}
+
+#education1 h1, #education1 p {
+	color: white;
+}
+
+#education1 p {
+	font-size: .8em;
+}
+
+
+
