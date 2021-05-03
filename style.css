@@ -261,9 +261,22 @@ strong {
 	text-align: center;
 }
 
-#myCanvas {
-
-	width: 98vw;
-	height: 80vh;
+#contact-tab {
 	background-color: black;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+	grid-template-rows: 50fr 50fr;
+	gap: 10px;
+	align-items: center;
+}
+
+#contact, #brace3 {
+	grid-row: 1/3;
+	align-self: center;
+}
+
+#contact-tab h1 {
+	color: white;
+	text-align: center;
 }
