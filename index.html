@@ -7,12 +7,13 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 		<script src="https://kit.fontawesome.com/3ecd080eb6.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
 		
 
 		<title>Aamir</title>
 
 	</head>
-<body>
+<body onload="init();">
 	<!--BG + Title + Arrow animation-->
 	<section id="intro" class="d-flex justify-content-around align-items-end flex-column">
 		<div id="introcontainer" class="container-fluid">
@@ -73,10 +74,10 @@
 				<a class="nav-link" href="#aboutme1">Profile</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="#education1">Education</a>
+				<a class="nav-link" href="#education-tab">Education</a>
 				</li>
 				<li class="nav-item">
-				<a class="nav-link" href="#">Projects</a>
+				<a class="nav-link" href="#project-tab">Projects</a>
 				</li>
 				<li class="nav-item">
 				<a class="nav-link" href="#">Skills</a>
@@ -86,7 +87,7 @@
 				</li>
 			</ul>
 	</section>
-	<section id="education1" class="container-fluid">
+	<section id="education-tab">
 		<div id="edu">
 			<h1 id="education">
 				Education
@@ -94,7 +95,6 @@
 		</div>
 		<div id="brace">
 			<img id="curlybrace" src="images/curlybrace.png">
-		</div>
 		</div>
 		<div id="w3c">
 			<strong>W3C</strong><br>
@@ -125,42 +125,47 @@
 				</p>
 		</div>
 	</section>
-	<section id="p-tab">
+	<section id="project-tab">
 		<div id="projects">
 			<h1>
 				Projects
 			</h1>
 		</div>
-		<div id="brace">
+		<div id="brace2">
 			<img id="curlybrace" src="images/curlybrace.png">
 		</div>
-		</div>
 		<div id="tabman">
-			<strong>Tab Man</strong><br>
+			<strong>tabman</strong><br>
 			<p>
-				Tab Group & Session Manager Chrome Extension
+				Jan 2021 - Apr 2021
+			</p>
+		</div>
+		<div id="">
+			<strong>Tab & Session Manager for Chrome</strong>
+
+			<p>
+				Extension for Chrome that allows users to
+				maintain tab groups and tab order between browser sessions.
 			</p>
 		</div>
 		<div id="pogflix">
-			<strong>Pogflix</strong>
-
+			<strong>pogflix</strong><br>
 			<p>
-				Netflix clone but for twitch idk i never used the app
+				Apr 2021 - Current
 			</p>
 		</div>
-		<div id="personalsite">
-			<strong>aali.io</strong><br>
-			<p>
-				Sept 2017 - Dec 2019
-			</p>
-		</div>
-		<div id="degree">
-				<strong>B.A. English Language & Literatures</strong>
+		<div id="desc">
+				<strong>Netflix clone</strong>
 				<p>
-					Minor: Asian Studies
+					Netflix but better
 				</p>
 		</div>
 	</section>
+	<section id="skills-tab">
+		<h1 id="skills">
+			Skills
+		</h1>
+		<canvas id="myCanvas"></canvas>
 	</section>
 </body>
 </html>
