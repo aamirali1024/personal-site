@@ -10,11 +10,40 @@
 		<script src="script.js"></script>
 		
 
-		<title>Aamir</title>
+		<title>Aamir Ali</title>
 
 	</head>
-<body onload="init();">
+<body data-spy="scroll" data-target=".navbar">
 	<!--BG + Title + Arrow animation-->
+		<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#"><span>Aamir </span>Ali</a>
+		
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+					<a class="nav-link" href="#intro">Home</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#aboutme1">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#education-tab">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#project-tab">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills-tab">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact-tab">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	<section id="intro" class="d-flex justify-content-around align-items-end flex-column">
 		<div id="introcontainer" class="container-fluid">
 			<h1>
@@ -35,16 +64,20 @@
 					</a>
 				</li>
 				<li>
+					<a href="#contact-tab">
 					<img class="social" src="images/mail.png" alt="a link to a form where you can email me">
+					</a>
 				</li>
 			</ul>
 		</div>
 		<div id="row1" class="flex-row">
 			<div class="mt-auto p-2">
-				<button id="nextpage">
-					<span id="arrow">
-					<i class="fas fa-angle-down fa-4x"></i>
+				<button id="nextpage" href="#aboutme1">
+					<a href="#aboutme1">
+						<span id="arrow">
+						<i class="fas fa-angle-down fa-4x"></i>
 					</span>
+					</a>
 				</button>
 			</div>
 		</div>
@@ -69,23 +102,6 @@
 				Risus commodo viverra maecenas 
 				accumsan lacus vel facilisis. 
 			</p>
-			<ul id="navigation" class="navbar-nav p-2 mr-auto mb-auto">
-				<li class="nav-item">
-				<a class="nav-link" href="#aboutme1">Profile</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#education-tab">Education</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#project-tab">Projects</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#">Skills</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-				</li>
-			</ul>
 	</section>
 	<section id="education-tab">
 		<div id="edu">
@@ -175,9 +191,14 @@
 		<div id="brace3">
 			<img id="curlybrace" src="images/curlybrace.png">
 		</div>
-		<form>
-			
-		</form>
+		<div id="form">
+			<form id = "myForm">
+				<input id="inputName" class="form-control" type="text" name="name" placeholder="Name" required>
+				<input id="inputEmail" class="form-control" type="email" name="email" placeholder="Email" required>
+				<textarea id="inputMessage" class="form-control" rows="5" placeholder="Message" required></textarea>
+				<button type="submit">Send</button>
+			</form>
+		</div>
 	</section>
 </body>
 </html>
