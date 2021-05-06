@@ -24,12 +24,8 @@ body {
 }
 
 .navbar-custom .navbar-nav .nav-link {
-	color: white;
+	color: white !important;
 
-}
-
-.navbar-custom .nav-item.active .nav-link {
-	color: lightblue;
 }
 
 .navbar-custom .navbar-nav .nav-item {
@@ -153,33 +149,54 @@ a, a:hover {
 	text-decoration: none;
 }
 
-#aboutme1 {
+#about-tab {
 	background-color: black;
-	height: 70vh;
-	margin-left: 0;
-	margin-right: 0;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+	grid-template-rows: 50fr 50fr;
+	gap: 10px;
+	align-items: center;
 }
 
-#aboutme1 h1 {
-	
-}
-
-#aboutme1 h1 span {
+#about-tab h1 span {
 	color: lightblue;
 }
-#aboutme1 p {
+#about-tab p {
 	font-size: .8em;
 	text-align: center;
 	width: 300px;
 }
 
-#aboutme1 h1, #aboutme1 p {
+#about-tab h1, #about-tab p {
 	color: white;
 	text-align: center;
 }
 
 #curlybrace {
-	height: 100px;
+	height: 15em;
+}
+
+#about, #brace1 {
+	grid-row: 1/3;
+	align-self: center;
+}
+
+#portrait {
+	grid-row: 1/3;
+	grid-column-start: 1/3;
+	align-self: center;
+	width: 8em;
+}
+
+#bio {
+	grid-column: 3;
+	grid-row: 1/3;
+	align-self: center;
+}
+
+#bio p {
+	width: 300px;
 }
 
 #navigation a {
@@ -202,15 +219,30 @@ strong {
 }
 
 
-#edu, #brace {
+#education, #brace2 {
 	grid-row: 1/3;
 	align-self: center;
 }
 
+#education {
+	justify-self: center;
+}
+
+#w3c {
+	justify-self: center;
+}
 #rutgers {
 	grid-row-start: 2;
 	grid-column-start: 3;
+	justify-self: center;
 
+}
+
+.icons {
+	width: 3em;
+	height: 3em;
+	display: block;
+	padding-bottom: 10px;
 }
 
 #degree {
@@ -243,13 +275,22 @@ strong {
 	align-self: center;
 }
 
+#projects {
+	justify-self: center;
+}
+
 #project-tab h1, #project-tab p {
 	color: white;
+}
+
+#tabman {
+	justify-self: center;
 }
 
 #pogflix {
 	grid-row-start: 2;
 	grid-column-start: 3;
+	justify-self: center;
 
 }
 
@@ -270,11 +311,53 @@ strong {
 #skills-tab {
 	background-color: black;
 	height: 80vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+	grid-template-rows: 50fr 50fr;
+	gap: 10px;
+	align-items: center;
 
 }
 
+#skills-tab h1 {
+	color: white;
+}
+
+#skills, #brace3 {
+	grid-row: 1/3;
+	align-self: center;
+}
+
 #skills {
-	color: lightblue;
+	justify-self: center;
+}
+
+.logos {
+	width: 8em;
+	height: 8em;
+	padding: 10px;
+}
+
+#html {
+	justify-self: center;
+}
+
+#css {
+	justify-self: center;
+}
+
+#js {
+	grid-row: 2/4;
+	justify-self: center;
+}
+
+#bootstrap {
+	grid-row: 2/4;
+	justify-self: center;
+}
+
+#skills-tab h2 {
+	color: white;
 	text-align: center;
 }
 
@@ -288,7 +371,7 @@ strong {
 	align-items: center;
 }
 
-#contact, #brace3 {
+#contact, #brace4 {
 	grid-row: 1/3;
 	align-self: center;
 }
