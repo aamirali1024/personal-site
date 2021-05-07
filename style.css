@@ -11,6 +11,8 @@ body {
 	position: relative;
 }
 
+/* LANDING PAGE */
+
 .navbar-custom {
 	background-color: black !important;
 	background-image: none;
@@ -33,10 +35,12 @@ body {
 }
 
 nav span {
-	color: lightblue;
+	color: #add8e6;
 }
 
+svg {
 
+}
 
 #arrow {
 	float: right !important;
@@ -49,7 +53,7 @@ nav span {
 }
 
 @keyframes bounce {
-	0%   { transform: translateY(0); }
+	0%   { transform: translateY(0);  }
 	50%  { transform: translateY(-20px); }
 	100% { transform: translateY(0); }
 }
@@ -149,6 +153,8 @@ a, a:hover {
 	text-decoration: none;
 }
 
+/* Bio Page */
+
 #about-tab {
 	background-color: black;
 	height: 80vh;
@@ -159,6 +165,20 @@ a, a:hover {
 	align-items: center;
 }
 
+#about-tab h1 {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: forwards;
+	animation-timing-function: linear;
+}
+
+@keyframes fade {
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+}
+
 #about-tab h1 span {
 	color: lightblue;
 }
@@ -166,15 +186,18 @@ a, a:hover {
 	font-size: .8em;
 	text-align: center;
 	width: 300px;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+
 }
 
 #about-tab h1, #about-tab p {
 	color: white;
 	text-align: center;
-}
-
-#curlybrace {
-	height: 15em;
 }
 
 #about, #brace1 {
@@ -187,6 +210,25 @@ a, a:hover {
 	grid-column-start: 1/3;
 	align-self: center;
 	width: 8em;
+
+}
+
+#bio-pic {
+	animation-name: scale;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-in;
+	transform-origin: center; 
+
+}
+
+@keyframes scale {
+	0%   { transform: scale(0); }
+/*	25%  { transform: scale(0.25); }
+	50%  { transform: scale(0.5); } */
+	100% { transform: scale(1); }
+
 }
 
 #bio {
@@ -199,9 +241,7 @@ a, a:hover {
 	width: 300px;
 }
 
-#navigation a {
-
-}
+/* Education Page*/
 
 #education-tab {
 	background-color: black;
@@ -212,6 +252,15 @@ a, a:hover {
 	gap: 10px;
 	align-items: center;
 	
+}
+
+#education-tab h1 {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 strong {
@@ -230,11 +279,33 @@ strong {
 
 #w3c {
 	justify-self: center;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
+
+#cert {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
 #rutgers {
 	grid-row-start: 2;
 	grid-column-start: 3;
 	justify-self: center;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 
 }
 
@@ -248,6 +319,12 @@ strong {
 #degree {
 	grid-row-start: 2;
 	grid-column-start: 4;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 
 }
 
@@ -258,6 +335,8 @@ strong {
 #education-tab p {
 	font-size: .8em;
 }
+
+/* Projects Page */
 
 #project-tab {
 	background-color: black;
@@ -279,24 +358,60 @@ strong {
 	justify-self: center;
 }
 
+#project-tab h1 {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
 #project-tab h1, #project-tab p {
 	color: white;
 }
 
 #tabman {
 	justify-self: center;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+#tabman-desc {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 #pogflix {
 	grid-row-start: 2;
 	grid-column-start: 3;
 	justify-self: center;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 
 }
 
-#desc {
+#pogflix-desc {
 	grid-row-start: 2;
 	grid-column-start: 4;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 
 }
 
@@ -307,6 +422,8 @@ strong {
 #projects {
 	grid-auto-rows: minmax(100px, auto);
 }
+
+/* Skills Page */
 
 #skills-tab {
 	background-color: black;
@@ -321,6 +438,12 @@ strong {
 
 #skills-tab h1 {
 	color: white;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 #skills, #brace3 {
@@ -336,10 +459,42 @@ strong {
 	width: 8em;
 	height: 8em;
 	padding: 10px;
+	animation-name: stutter, fade;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-direction: normal;
 }
 
+@keyframes stutter {
+	0%   { transform: translateY(0);  }
+	20%  { transform: translateY(-100px); }
+	40%  { transform: translateY(0); }
+	60%  { transform: translateY(-10px);  }
+	100%  { transform: translateY(0px); }
+}
+
+ /* .logos:hover {
+	animation-name: bounce;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	
+} */
+
+.hover-div:hover {
+	animation-name: bounce;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
 #html {
 	justify-self: center;
+
 }
 
 #css {
@@ -361,6 +516,8 @@ strong {
 	text-align: center;
 }
 
+/* Contact Page */
+
 #contact-tab {
 	background-color: black;
 	height: 80vh;
@@ -379,6 +536,12 @@ strong {
 #contact-tab h1 {
 	color: white;
 	text-align: center;
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
 }
 
 #form {
