@@ -26,12 +26,16 @@ body {
 }
 
 .navbar-custom .navbar-nav .nav-link {
-	color: white !important;
+	color: white;
 
 }
 
 .navbar-custom .navbar-nav .nav-item {
 	background-color: black;
+}
+
+.navbar-custom .navbar-nav .nav-link.active {
+	color: lightblue;
 }
 
 nav span {
