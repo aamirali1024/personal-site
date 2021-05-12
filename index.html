@@ -8,7 +8,6 @@
 		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/3ecd080eb6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
 
 
 	<title>Aamir Ali</title>
@@ -30,13 +29,13 @@
 					<a class="nav-link active" href="#intro" data-target="#intro">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#about-tab" data-target="#about-tab">About</a>
+					<a class="nav-link" href="#aboutTab" data-target="#aboutTab">About</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#education-tab">Education</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#project-tab">Projects</a>
+					<a class="nav-link" href="T">Projects</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#skills-tab">Skills</a>
@@ -75,8 +74,8 @@
 		</div>
 		<div id="row1" class="flex-row">
 			<div class="mt-auto p-2">
-				<button id="nextpage" href="#about-tab">
-					<a href="#about-tab">
+				<button id="nextpage" href="#aboutTab">
+					<a href="#aboutTab">
 						<span id="arrow">
 							<i class="fas fa-angle-down fa-4x"></i>
 						</span>
@@ -85,9 +84,9 @@
 			</div>
 		</div>
 	</section>
-	<section id="about-tab">
+	<section id="aboutTab" class="visibile">
 		<div id="about">
-			<h1>
+			<h1 id="aboutHeading">
 				About<br>
 				<span>Me</span>
 			</h1>
@@ -120,7 +119,7 @@
 			<img id="bio-pic" src="images/portrait.png" alt="A picture of Me">
 		</div>
 		<div id="bio">
-			<p>
+			<p id="aboutBio">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 				Explicabo rem porro impedit repudiandae, quis, assumenda 
 				nihil nisi, dolorum fugiat ratione necessitatibus praesentium 
@@ -137,6 +136,29 @@
 				 Nisi tempora impedit illo culpa ullam distinctio blanditiis 
 				 aperiam voluptate non libero laudantium quae nesciunt nulla eius 
 			</p>
+		</div>
+		<div id="closeBrace1">
+			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+				<defs>
+					<linearGradient id="gradient">
+						<stop offset="0%" stop-color="#ADD8E6">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+						<stop offset="0%" stop-color="#000">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+					  </linearGradient> 
+				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
 		</div>
 	</section>
 	<section id="education-tab">
@@ -199,10 +221,33 @@
 				Minor: Asian Studies
 			</p>
 		</div>
+		<div id="closeBrace1">
+			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+				<defs>
+					<linearGradient id="gradient">
+						<stop offset="0%" stop-color="#ADD8E6">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+						<stop offset="0%" stop-color="#000">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+					  </linearGradient> 
+				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
+		</div>
 	</section>
-	<section id="project-tab">
+	<section id="projectTab" class="visibility">
 		<div id="projects">
-			<h1>
+			<h1 id="projectHeading">
 				Projects
 			</h1>
 		</div>
@@ -257,6 +302,29 @@
 			<p>
 				Netflix but better
 			</p>
+		</div>
+		<div id="closeBrace1">
+			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+				<defs>
+					<linearGradient id="gradient">
+						<stop offset="0%" stop-color="#ADD8E6">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+						<stop offset="0%" stop-color="#000">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+					  </linearGradient> 
+				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
 		</div>
 	</section>
 	<section id="skills-tab">
@@ -321,8 +389,29 @@
 				Bootstrap
 			</h2>
 		</div>
-
-
+		<div id="closeBrace1">
+			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+				<defs>
+					<linearGradient id="gradient">
+						<stop offset="0%" stop-color="#ADD8E6">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+						<stop offset="0%" stop-color="#000">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+					  </linearGradient> 
+				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
+		</div>
 	</section>
 	<section id="contact-tab">
 		<div id="contact">
@@ -362,10 +451,34 @@
 				<button type="submit">Send</button>
 			</form>
 		</div>
+		<div id="closeBrace1">
+			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+				<defs>
+					<linearGradient id="gradient">
+						<stop offset="0%" stop-color="#ADD8E6">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+						<stop offset="0%" stop-color="#000">
+						  <animate 
+						  dur="1s" 
+						  attributeName="offset" 
+						  fill="freeze" 
+						  from="0" 
+						  to="1"/>
+						</stop>
+					  </linearGradient> 
+				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
+		</div>
 	</section>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
