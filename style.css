@@ -226,7 +226,7 @@ a, a:hover {
 }
 /* Education Page*/
 
-#education-tab {
+#educationTab {
 	background-color: black;
 	height: 80vh;
 	display: grid;
@@ -235,15 +235,6 @@ a, a:hover {
 	gap: 10px;
 	align-items: center;
 	
-}
-
-#education-tab h1 {
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 }
 
 strong {
@@ -311,11 +302,11 @@ strong {
 
 }
 
-#education-tab h1, #education-tab p {
+#educationTab h1, #educationTab p {
 	color: white;
 }
 
-#education-tab p {
+#educationTab p {
 	font-size: .8em;
 }
 
@@ -399,7 +390,7 @@ strong {
 
 /* Skills Page */
 
-#skills-tab {
+#skillsTab {
 	background-color: black;
 	height: 80vh;
 	display: grid;
@@ -410,14 +401,8 @@ strong {
 
 }
 
-#skills-tab h1 {
+#skillsTab h1 {
 	color: white;
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 }
 
 #skills, #brace3 {
@@ -475,14 +460,14 @@ strong {
 	justify-self: center;
 }
 
-#skills-tab h2 {
+#skillsTab h2 {
 	color: white;
 	text-align: center;
 }
 
 /* Contact Page */
 
-#contact-tab {
+#contactTab {
 	background-color: black;
 	height: 80vh;
 	display: grid;
@@ -492,20 +477,17 @@ strong {
 	align-items: center;
 }
 
+#contactTab span {
+	color: lightblue;
+}
 #contact, #brace4 {
 	grid-row: 1/3;
 	align-self: center;
 }
 
-#contact-tab h1 {
+#contactTab h1 {
 	color: white;
 	text-align: center;
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 }
 
 #form {
@@ -561,7 +543,7 @@ button {
 	100% { opacity: 1; }
 }
 
-.visibile {
+.visible {
 	display: none;
 }
 
@@ -572,6 +554,16 @@ button {
 .fadeClass {
 	animation-name: fade;
 	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+.fadeClassB {
+	animation-name: fade;
+	animation-duration: 2s;
+	animation-delay: 2s;
 	animation-iteration-count: 1;
 	animation-direction: normal;
 	animation-fill-mode: forwards;
