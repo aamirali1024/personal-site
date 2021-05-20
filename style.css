@@ -194,16 +194,6 @@ a, a:hover {
 
 }
 
-#bio-pic {
-	animation-name: scale;
-	animation-duration: 1s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-timing-function: ease-in;
-	transform-origin: center; 
-
-}
-
 #bio {
 	grid-column: 3;
 	grid-row: 1/3;
@@ -245,34 +235,15 @@ strong {
 
 #w3c {
 	justify-self: center;
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 }
 
 #cert {
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 }
 
 #rutgers {
 	grid-row-start: 2;
 	grid-column-start: 3;
 	justify-self: center;
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
-
 }
 
 .icons {
@@ -285,12 +256,6 @@ strong {
 #degree {
 	grid-row-start: 2;
 	grid-column-start: 4;
-	animation-name: fade;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	animation-timing-function: linear;
 
 }
 
@@ -372,7 +337,7 @@ strong {
 
 }
 
-#project-tT p {
+#project-tab p {
 	font-size: .8em;
 }
 
@@ -555,4 +520,13 @@ button {
 	animation-direction: normal;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear;
+}
+
+.scaleClass {
+	animation-name: scale;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-in;
+	transform-origin: center; 
 }

@@ -97,6 +97,7 @@
 					<linearGradient id="gradienter">
 						<stop offset="0%" stop-color="#ADD8E6">
 						  <animate 
+						  id="test"
 						  dur="1s" 
 						  attributeName="offset"
 						  begin="indefinite"
@@ -105,7 +106,8 @@
 						  to="1"/>
 						</stop>
 						<stop offset="0%" stop-color="#000">
-						  <animate 
+						  <animate
+						  id="test" 
 						  dur="1s" 
 						  attributeName="offset"
 						  begin="indefinite"
@@ -118,10 +120,10 @@
    				<path class="curlybrace" fill="url(#gradienter)" d="M0 91.8l0 17c4.5 0.1 8.2 1.6 11.1 4.4 2.8 2.8 4.7 6.6 5.7 11.3 0.9 4.8 1.4 13 1.5 24.6 0.1 11.7 0.2 19.3 0.5 23 0.5 5.9 1.5 10.6 3 14.2 1.4 3.5 3.2 6.3 5.3 8.4 2.1 2.1 4.9 3.7 8.1 4.9 2.2 0.8 5.9 1.2 11 1.2l5 0 0-16.4-2.7 0c-6.1 0-10.2-1.3-12.2-3.9-2-2.6-3-8.5-3-17.6 0-17.4-0.3-28.5-0.8-33.1-0.9-7.7-2.8-13.9-5.6-18.5-2.8-4.6-6.9-8.2-12-10.8 6.8-3.8 11.6-8.9 14.3-15.2 2.8-6.3 4.2-16.9 4.2-31.9 0-13.6 0.1-21.7 0.4-24.4 0.4-4.7 1.6-7.9 3.5-9.8 1.9-1.8 5.7-2.7 11.3-2.7l2.7 0 0-16.4-5 0c-5.8 0-10 0.5-12.6 1.7-3.8 1.5-6.9 4.1-9.4 7.7-2.5 3.6-4.1 8.2-4.8 13.7-0.7 5.5-1.1 14.5-1.2 27.1 0 12.6-0.5 21.2-1.5 26-1 4.8-2.9 8.6-5.7 11.3-2.9 2.8-6.6 4.2-11.1 4.4z"/></svg>
 		</div>
 		<div id="portrait">
-			<img id="bio-pic" src="images/portrait.png" alt="A picture of Me">
+			<img id="bio-pic" src="images/portrait.png" alt="A picture of Me" class="visible">
 		</div>
 		<div id="bio">
-			<p id="aboutBio">
+			<p id="aboutBio" class="visible">
 				Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 				Explicabo rem porro impedit repudiandae, quis, assumenda 
 				nihil nisi, dolorum fugiat ratione necessitatibus praesentium 
@@ -142,9 +144,11 @@
 		<div id="closeBrace1">
 			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
 				<defs>
-					<linearGradient id="gradient">
+					<linearGradient id="gradienter">
 						<stop offset="0%" stop-color="#ADD8E6">
-						  <animate 
+						  <animate
+						  id="test"
+						  begin="indefinite" 
 						  dur="1s" 
 						  attributeName="offset" 
 						  fill="freeze" 
@@ -152,7 +156,9 @@
 						  to="1"/>
 						</stop>
 						<stop offset="0%" stop-color="#000">
-						  <animate 
+						  <animate
+						  id="test"
+						  begin="indefinite" 
 						  dur="1s" 
 						  attributeName="offset" 
 						  fill="freeze" 
@@ -160,7 +166,7 @@
 						  to="1"/>
 						</stop>
 					  </linearGradient> 
-				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
+				</defs><path class="curlybrace" fill="url(#gradienter)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
 		</div>
 	</section>
 	<section id="educationTab" class="visible">
@@ -172,9 +178,11 @@
 		<div id="brace2">
 			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
 				<defs>
-					<linearGradient id="gradient">
+					<linearGradient id="gradienter2">
 						<stop offset="0%" stop-color="#ADD8E6">
-						  <animate 
+						  <animate
+						  id="test2"
+						  begin="indefinite" 
 						  dur="1s" 
 						  attributeName="offset" 
 						  fill="freeze" 
@@ -182,7 +190,9 @@
 						  to="1"/>
 						</stop>
 						<stop offset="0%" stop-color="#000">
-						  <animate 
+						  <animate
+						  id="test2"
+						  begin="indefinite" 
 						  dur="1s" 
 						  attributeName="offset" 
 						  fill="freeze" 
@@ -191,16 +201,16 @@
 						</stop>
 					  </linearGradient>  
     			</defs>
-   				<path class="curlybrace" fill="url(#gradient)" d="M0 91.8l0 17c4.5 0.1 8.2 1.6 11.1 4.4 2.8 2.8 4.7 6.6 5.7 11.3 0.9 4.8 1.4 13 1.5 24.6 0.1 11.7 0.2 19.3 0.5 23 0.5 5.9 1.5 10.6 3 14.2 1.4 3.5 3.2 6.3 5.3 8.4 2.1 2.1 4.9 3.7 8.1 4.9 2.2 0.8 5.9 1.2 11 1.2l5 0 0-16.4-2.7 0c-6.1 0-10.2-1.3-12.2-3.9-2-2.6-3-8.5-3-17.6 0-17.4-0.3-28.5-0.8-33.1-0.9-7.7-2.8-13.9-5.6-18.5-2.8-4.6-6.9-8.2-12-10.8 6.8-3.8 11.6-8.9 14.3-15.2 2.8-6.3 4.2-16.9 4.2-31.9 0-13.6 0.1-21.7 0.4-24.4 0.4-4.7 1.6-7.9 3.5-9.8 1.9-1.8 5.7-2.7 11.3-2.7l2.7 0 0-16.4-5 0c-5.8 0-10 0.5-12.6 1.7-3.8 1.5-6.9 4.1-9.4 7.7-2.5 3.6-4.1 8.2-4.8 13.7-0.7 5.5-1.1 14.5-1.2 27.1 0 12.6-0.5 21.2-1.5 26-1 4.8-2.9 8.6-5.7 11.3-2.9 2.8-6.6 4.2-11.1 4.4z"/></svg>
+   				<path class="curlybrace" fill="url(#gradienter2)" d="M0 91.8l0 17c4.5 0.1 8.2 1.6 11.1 4.4 2.8 2.8 4.7 6.6 5.7 11.3 0.9 4.8 1.4 13 1.5 24.6 0.1 11.7 0.2 19.3 0.5 23 0.5 5.9 1.5 10.6 3 14.2 1.4 3.5 3.2 6.3 5.3 8.4 2.1 2.1 4.9 3.7 8.1 4.9 2.2 0.8 5.9 1.2 11 1.2l5 0 0-16.4-2.7 0c-6.1 0-10.2-1.3-12.2-3.9-2-2.6-3-8.5-3-17.6 0-17.4-0.3-28.5-0.8-33.1-0.9-7.7-2.8-13.9-5.6-18.5-2.8-4.6-6.9-8.2-12-10.8 6.8-3.8 11.6-8.9 14.3-15.2 2.8-6.3 4.2-16.9 4.2-31.9 0-13.6 0.1-21.7 0.4-24.4 0.4-4.7 1.6-7.9 3.5-9.8 1.9-1.8 5.7-2.7 11.3-2.7l2.7 0 0-16.4-5 0c-5.8 0-10 0.5-12.6 1.7-3.8 1.5-6.9 4.1-9.4 7.7-2.5 3.6-4.1 8.2-4.8 13.7-0.7 5.5-1.1 14.5-1.2 27.1 0 12.6-0.5 21.2-1.5 26-1 4.8-2.9 8.6-5.7 11.3-2.9 2.8-6.6 4.2-11.1 4.4z"/></svg>
 		</div>
-		<div id="w3c">
+		<div id="w3c" class="visible">
 			<img src="images/certificate.jpg" class="icons">
 			<strong>W3C</strong><br>
 			<p>
 				Jan 2021 - Apr 2021
 			</p>
 		</div>
-		<div id="cert">
+		<div id="cert" class="visible">
 			<strong>Front-End Web Developer Certificate</strong>
 
 			<p>
@@ -210,14 +220,14 @@
 				for incorporating them into my projects.
 			</p>
 		</div>
-		<div id="rutgers">
+		<div id="rutgers" class="visible">
 			<img src="images/education.png" class="icons">
 			<strong>Rutgers University</strong><br>
 			<p>
 				Sept 2017 - Dec 2019
 			</p>
 		</div>
-		<div id="degree">
+		<div id="degree" class="visible">
 			<strong>B.A. English Language & Literatures</strong>
 			<p>
 				Minor: Asian Studies
@@ -226,9 +236,11 @@
 		<div id="closeBrace1">
 			<svg xmlns="http://www.w3.org/2000/svg" width="51" height="201" viewBox="0 0 51 200.8" style="image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
 				<defs>
-					<linearGradient id="gradient">
+					<linearGradient id="gradienter2">
 						<stop offset="0%" stop-color="#ADD8E6">
-						  <animate 
+						  <animate
+						  id="test2"
+						  begin="indefinite" 
 						  dur="1s" 
 						  attributeName="offset" 
 						  fill="freeze" 
@@ -236,7 +248,9 @@
 						  to="1"/>
 						</stop>
 						<stop offset="0%" stop-color="#000">
-						  <animate 
+						  <animate
+						  id="test2"
+						  begin="indefinite" 
 						  dur="1s" 
 						  attributeName="offset" 
 						  fill="freeze" 
@@ -244,7 +258,7 @@
 						  to="1"/>
 						</stop>
 					  </linearGradient> 
-				</defs><path class="curlybrace" fill="url(#gradient)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
+				</defs><path class="curlybrace" fill="url(#gradienter2)" d="M51.2 91.8l0 17c-4.5 0.1-8.2 1.6-11.1 4.4-2.8 2.8-4.7 6.6-5.7 11.3-0.9 4.8-1.4 13-1.5 24.6-0.1 11.7-0.2 19.3-0.5 23-0.5 5.9-1.5 10.6-3 14.2-1.4 3.5-3.2 6.3-5.3 8.4-2.1 2.1-4.9 3.7-8.1 4.9-2.2 0.8-5.9 1.2-11 1.2l-5 0 0-16.4 2.7 0c6.1 0 10.2-1.3 12.2-3.9 2-2.6 3-8.5 3-17.6 0-17.4 0.3-28.5 0.8-33.1 0.9-7.7 2.8-13.9 5.6-18.5 2.8-4.6 6.9-8.2 12-10.8-6.8-3.8-11.6-8.9-14.3-15.2-2.8-6.3-4.2-16.9-4.2-31.9 0-13.6-0.1-21.7-0.4-24.4-0.4-4.7-1.6-7.9-3.5-9.8-1.9-1.8-5.7-2.7-11.3-2.7l-2.7 0 0-16.4 5 0c5.8 0 10 0.5 12.6 1.7 3.8 1.5 6.9 4.1 9.4 7.7 2.5 3.6 4.1 8.2 4.8 13.7 0.7 5.5 1.1 14.5 1.2 27.1 0 12.6 0.5 21.2 1.5 26 1 4.8 2.9 8.6 5.7 11.3 2.9 2.8 6.6 4.2 11.1 4.4z"/></svg>
 		</div>
 	</section>
 	<section id="projectTab" class="visible">
