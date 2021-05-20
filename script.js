@@ -2,6 +2,7 @@ $('body').scrollspy({ target: '#navbar-example' });
 
 // SVG
 var braceAni = document.querySelector('#braceAni');
+var gradient = document.querySelector('#gradienter');
 
 // Element to observe
 var abt = document.querySelector('#aboutTab');
@@ -16,6 +17,9 @@ var skill = document.querySelector('#skillsTab');
 var cont = document.querySelector('#contactTab');
     var contHead = document.querySelector('#contHead');
 
+const config = {
+    threshold:0.5
+};
 
 //Create observer
 var observerA = new IntersectionObserver(function (entries, obs) {
@@ -29,18 +33,14 @@ var observerA = new IntersectionObserver(function (entries, obs) {
         // add animation class
         if (isIntersecting == true) {
             abt.classList.remove('visible');
-            abt.classList.add('display');
             abtHead.classList.add('fadeClass');
-            abtBio.classList.add('fadeClassB');
-            braceAni.addEventListener('animationend', function() {
-                braceAni.beginElement();
-            }, false);
+            abtBio.classList.add('fadeClass');
 
          // dispose observer
          obs.unobserve(entry.target);
         }  
 	});
-});
+}, config);
 
 //Create observer
 var observerB = new IntersectionObserver(function (entries, obs) {
@@ -54,7 +54,6 @@ var observerB = new IntersectionObserver(function (entries, obs) {
         // add animation class
         if (isIntersecting == true) {
             edu.classList.remove('visible');
-            edu.classList.add('display');
             eduHead.classList.add('fadeClass');
 
 
@@ -75,7 +74,6 @@ var observerC = new IntersectionObserver(function (entries, obs) {
         // add animation class
         if (isIntersecting == true) {
             proj.classList.remove('visible');
-            proj.classList.add('display');
             projHead.classList.add('fadeClass');
 
 
@@ -95,8 +93,7 @@ var observerD = new IntersectionObserver(function (entries, obs) {
 
         // add animation class
         if (isIntersecting == true) {
-            skills.classList.remove('visible');
-            skills.classList.add('display');
+            skill.classList.remove('visible');
             skillsHead.classList.add('fadeClass');
 
 
@@ -117,7 +114,6 @@ var observerE = new IntersectionObserver(function (entries, obs) {
         // add animation class
         if (isIntersecting == true) {
             cont.classList.remove('visible');
-            cont.classList.add('display');
             contHead.classList.add('fadeClass');
 
 
