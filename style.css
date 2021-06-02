@@ -149,9 +149,10 @@ a, a:hover {
 }
 
 #aboutTab p {
-	font-size: .8em;
+	font-size: 1.2em;
 	text-align: center;
 	width: 20vw;
+
 }
 
 #aboutTab h1, #aboutTab p {
@@ -173,10 +174,6 @@ a, a:hover {
 
 #bio-pic {
 	width: 20vw;
-}
-
-#braceAni {
-
 }
 
 #bio {
@@ -206,8 +203,8 @@ a, a:hover {
 
 strong {
 	color: lightblue;
+	font-size: 1.5em;
 }
-
 
 #education, #brace2 {
 	grid-row: 1/3;
@@ -249,7 +246,7 @@ strong {
 }
 
 #educationTab p {
-	font-size: .8em;
+	font-size: 1.2em;
 }
 
 /* Projects Page */
@@ -302,7 +299,7 @@ strong {
 }
 
 #project-tab p {
-	font-size: .8em;
+	font-size: 1.2em;
 }
 
 #projects {
@@ -336,14 +333,9 @@ strong {
 }
 
 .logos {
-	width: 8em;
-	height: 8em;
+	width: 15em;
+	height: 15em;
 	padding: 10px;
-	animation-name: stutter, fade;
-	animation-duration: 1s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: 1;
-	animation-direction: normal;
 }
 
 @keyframes stutter {
@@ -386,6 +378,29 @@ strong {
 	text-align: center;
 }
 
+/* Goals Page */
+
+#goalsTab {
+	background-color: black;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+	grid-template-rows: 50fr 50fr;
+	gap: 10px;
+	align-items: center;
+
+}
+
+#goals, #brace {
+	grid-row: 1/3;
+	align-self: center;
+}
+
+#goalsTab h1 {
+	color: white;
+	text-align: center;
+}
+
 /* Contact Page */
 
 #contactTab {
@@ -401,7 +416,7 @@ strong {
 #contactTab span {
 	color: lightblue;
 }
-#contact, #brace5 {
+#contact, #brace6 {
 	grid-row: 1/3;
 	align-self: center;
 }
@@ -493,6 +508,14 @@ button {
 	animation-direction: normal;
 	animation-timing-function: ease-in;
 	transform-origin: center; 
+}
+
+.stutterClass {
+	animation-name: stutter, fade;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-direction: normal;
 }
 
 /* Desktop */

@@ -6,7 +6,7 @@ var gradient = document.querySelector('#test');
 var gradientB = document.querySelector('#test2');
 var gradientC = document.querySelector('#test3');
 var gradientD = document.querySelector('#test4');
-var gradientE = document.querySelector('#test5');
+var gradientF = document.querySelector('#test6');
 
 // Element to observe
 var abt = document.querySelector('#aboutTab');
@@ -180,10 +180,10 @@ var observerD = new IntersectionObserver(function (entries, obs) {
                 js.classList.remove('visible');
                 bootstrap.classList.remove('visible');
 
-                html.classList.add('fadeClass');
-                css.classList.add('fadeClass');
-                js.classList.add('fadeClass');
-                bootstrap.classList.add('fadeClass');
+                html.classList.add('stutterClass');
+                css.classList.add('stutterClass');
+                js.classList.add('stutterClass');
+                bootstrap.classList.add('stutterClass');
 
             },false);
 
@@ -195,7 +195,7 @@ var observerD = new IntersectionObserver(function (entries, obs) {
 
 // Contact Observer
 
-var observerE = new IntersectionObserver(function (entries, obs) {
+var observerF = new IntersectionObserver(function (entries, obs) {
     entries.forEach(function (entry) {
 		// Log the element and if it's in the viewport
 		console.log(entry.target);
@@ -209,10 +209,10 @@ var observerE = new IntersectionObserver(function (entries, obs) {
             contHead.classList.add('fadeClass');
             // after heading animation
             contHead.addEventListener('animationend', function(){
-                gradientE.beginElement();
+                gradientF.beginElement();
             }, false);
             // after brace animation
-            gradientE.addEventListener('endEvent', function(){
+            gradientF.addEventListener('endEvent', function(){
                 form.classList.remove('visible');
 
                 form.classList.add('fadeClass');
@@ -230,4 +230,4 @@ observerA.observe(abt);
 observerB.observe(edu);
 observerC.observe(proj);
 observerD.observe(skill);
-observerE.observe(cont);
+observerF.observe(cont);
