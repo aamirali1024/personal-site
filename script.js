@@ -1,5 +1,7 @@
 $('body').scrollspy({ target: '#navbar-example' });
 
+
+
 // SVG
 var braceAni = document.querySelector('#braceAni');
 var gradient = document.querySelector('#test');
